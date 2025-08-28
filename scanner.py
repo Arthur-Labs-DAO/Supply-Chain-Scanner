@@ -278,7 +278,7 @@ def index():
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Universal Python Code Explorer</title>
+    <title>Blockchain Supply Chain</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -609,8 +609,8 @@ def index():
 </head>
 <body>
     <div class="header">
-        <h1>Universal Python Code Explorer</h1>
-        <p>Analyze any Python project - Navigate files, explore functions, deploy to blockchain</p>
+        <h1>Blockchain Supply Chain</h1>
+        <p>Import this into yur SCM / ERP tool to deploy specific smart contracts</p>
     </div>
 
     <div class="container">
@@ -1057,6 +1057,6 @@ def project_info():
 
 if __name__ == '__main__':
     port = find_free_port(8003)
-    print(f"Starting Universal Python Code Explorer on http://localhost:{port}")
+    print(f"Starting Blockchain Supply Chain on http://localhost:{port}")
     print("This tool works with any Python project structure!")
     app.run(debug=True, port=port, host='0.0.0.0')
