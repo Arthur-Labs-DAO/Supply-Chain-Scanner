@@ -610,7 +610,7 @@ def index():
 <body>
     <div class="header">
         <h1>Blockchain Supply Chain</h1>
-        <p>Import this into yur SCM / ERP tool to deploy specific smart contracts</p>
+        <p>Import this into your SCM / ERP tool to deploy specific smart contracts</p>
     </div>
 
     <div class="container">
