@@ -1,1 +1,0 @@
-ink::storage::Mapping<u32, dynamic_contract::FunctionMetadata, ink::storage::traits::ResolverKey<ink::storage::traits::AutoKey, ink::storage::traits::ManualKey<4040038434>>>
