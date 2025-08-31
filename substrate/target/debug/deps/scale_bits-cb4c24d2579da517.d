@@ -1,0 +1,11 @@
+/home/babes/Desktop/Projects/Supply-Chain-Scanner/substrate/target/debug/deps/scale_bits-cb4c24d2579da517.d: /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/lib.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/bits/mod.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/bits/bits.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/mod.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/decode_iter.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/encode_iter.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/format.rs
+
+/home/babes/Desktop/Projects/Supply-Chain-Scanner/substrate/target/debug/deps/libscale_bits-cb4c24d2579da517.rmeta: /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/lib.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/bits/mod.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/bits/bits.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/mod.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/decode_iter.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/encode_iter.rs /home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/format.rs
+
+/home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/lib.rs:
+/home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/bits/mod.rs:
+/home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/bits/bits.rs:
+/home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/mod.rs:
+/home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/decode_iter.rs:
+/home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/encode_iter.rs:
+/home/babes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scale-bits-0.4.0/src/scale/format.rs:

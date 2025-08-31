@@ -1,0 +1,2 @@
+ink::storage::traits::ResolverKey<_, ink::storage::traits::ManualKey<4040038434>>
+ink::storage::Mapping<u32, dynamic_contract::FunctionMetadata>: ink::storage::traits::StorableHint<ink::storage::traits::ResolverKey<_, ink::storage::traits::ManualKey<4040038434>>>

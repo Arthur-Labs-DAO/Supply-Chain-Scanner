@@ -1,0 +1,2 @@
+dynamic_contract::_::__ink_ConstructorDecoder: parity_scale_codec::codec::Decode
+<dynamic_contract::DynamicContract as ink::reflect::ContractConstructorDecoder>::Type

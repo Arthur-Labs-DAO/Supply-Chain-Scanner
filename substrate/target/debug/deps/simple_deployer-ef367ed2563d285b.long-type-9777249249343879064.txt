@@ -1,0 +1,1 @@
+<dynamic_contract::DynamicContract as ink::reflect::ContractConstructorDecoder>::Type
