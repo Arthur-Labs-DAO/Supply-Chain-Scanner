@@ -2,3 +2,5 @@
 substrate/Cargo.lock
 venv
 substate/target
+cache
+out
