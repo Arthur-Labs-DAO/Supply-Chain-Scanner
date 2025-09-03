@@ -1,8 +1,9 @@
 #!/bin/bash
-# A simple script to deploy the generated contract using Forge.
-# Ensure your .env file has RPC_URL and PRIVATE_KEY configured.
 
-# Check if .env file exists
+# A simple script to deploy the generated contract using Forge.
+# It uses the environment variables from your .env file.
+
+# Load environment variables
 if [ ! -f .env ]; then
     echo "Error: .env file not found. Please create one with RPC_URL and PRIVATE_KEY."
     exit 1
@@ -11,21 +12,18 @@ set -a
 source .env
 set +a
 
-echo "Compiling contract Create_product_recordRecord.sol..."
-forge build
-if [ $? -ne 0 ]; then
-    echo "Forge build failed. Aborting deployment."
-    exit 1
-fi
-
-echo "Deploying Create_product_recordRecord with constructor arguments: 'onetwothree' 'verified' 111 true"
-forge create src/Create_product_recordRecord.sol:Create_product_recordRecord \
-    --broadcast \
+# Run the deployment command
+echo "Running Forge deployment command..."
+forge create --broadcast \
     --rpc-url "$RPC_URL" \
     --private-key "$PRIVATE_KEY" \
-    --constructor-args 'onetwothree' 'verified' 111 true
+    src/Create_product_recordRecord.sol:Create_product_recordRecord \
+    --constructor-args 'PBA-001' 'Beautiful_Bali_Shirt' 40 true
+
+# Check if the deployment was successful
 if [ $? -ne 0 ]; then
     echo "Forge deployment failed."
     exit 1
 fi
+
 echo "Deployment of Create_product_recordRecord successful."

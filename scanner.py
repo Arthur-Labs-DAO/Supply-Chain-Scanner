@@ -318,7 +318,8 @@ def index():
             padding: 20px;
         }
         .deploy-panel {
-            min-height: 150px;
+            max-height: 300px;
+            min-height: 150px
             background: #2d2d30;
             border-top: 2px solid #007acc;
             padding: 15px;
@@ -1128,10 +1129,11 @@ def generate_and_run_forge_script(sol_code, contract_name, constructor_args, enc
     constructor_args_str = " ".join(final_args)
 
     script_content = f"""#!/bin/bash
-# A simple script to deploy the generated contract using Forge.
-# Ensure your .env file has RPC_URL and PRIVATE_KEY configured.
 
-# Check if .env file exists
+# A simple script to deploy the generated contract using Forge.
+# It uses the environment variables from your .env file.
+
+# Load environment variables
 if [ ! -f .env ]; then
     echo "Error: .env file not found. Please create one with RPC_URL and PRIVATE_KEY."
     exit 1
@@ -1140,23 +1142,20 @@ set -a
 source .env
 set +a
 
-echo "Compiling contract {contract_name}.sol..."
-forge build
-if [ $? -ne 0 ]; then
-    echo "Forge build failed. Aborting deployment."
-    exit 1
-fi
-
-echo "Deploying {contract_name} with constructor arguments: {constructor_args_str}"
-forge create src/{contract_name}.sol:{contract_name} \\
-    --broadcast \\
+# Run the deployment command
+echo "Running Forge deployment command..."
+forge create --broadcast \\
     --rpc-url "$RPC_URL" \\
     --private-key "$PRIVATE_KEY" \\
+    src/{contract_name}.sol:{contract_name} \\
     --constructor-args {constructor_args_str}
+
+# Check if the deployment was successful
 if [ $? -ne 0 ]; then
     echo "Forge deployment failed."
     exit 1
 fi
+
 echo "Deployment of {contract_name} successful."
 """
     os.makedirs('src', exist_ok=True)
